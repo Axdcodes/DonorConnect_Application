@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.auth.signin.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_signInFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/nav_graph" />
+        <action
+            android:id="@+id/action_signInFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/nav_graph" />
+        <action
+            android:id="@+id/action_signInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_signInFragment_to_selectLocationFragment"
+            app:destination="@id/selectLocationFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.auth.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.home.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/nav_graph" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_bloodAvailabilityFragment"
+            app:destination="@id/bloodAvailabilityFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_bloodRequestFragment"
+            app:destination="@id/bloodRequestFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_viewProfileFragment"
+            app:destination="@id/viewProfileFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_requestHistoryFragment"
+            app:destination="@id/requestHistoryFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_donationHistoryFragment"
+            app:destination="@id/donationHistoryFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.home.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/nav_graph" />
+        <action
+            android:id="@+id/action_profileFragment_to_selectLocationFragment"
+            app:destination="@id/selectLocationFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.auth.forgotpassword.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/bloodAvailabilityFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.home.bloodavailabilty.BloodAvailabilityFragment"
+        android:label="fragment_blood_availabilty"
+        tools:layout="@layout/fragment_blood_availabilty" />
+    <fragment
+        android:id="@+id/bloodRequestFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.home.bloodrequest.BloodRequestFragment"
+        android:label="BloodRequestFragment"
+        tools:layout="@layout/fragment_blood_request" >
+        <action
+            android:id="@+id/action_bloodRequestFragment_to_bloodResultsFragment"
+            app:destination="@id/bloodResultsFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/bloodResultsFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.home.bloodrequestresults.BloodResultsFragment"
+        android:label="fragment_blood_results"
+        tools:layout="@layout/fragment_blood_results" >
+        <argument
+            android:name="bloodResultsList"
+            app:argType="com.efedaniel.bloodfinder.bloodfinder.models.request.UploadBloodAvailabilityRequest[]" />
+        <action
+            android:id="@+id/action_bloodResultsFragment_to_bloodPostingDetailsFragment"
+            app:destination="@id/bloodPostingDetailsFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectLocationFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.maps.selectlocation.SelectLocationFragment"
+        android:label="SelectLocationFragment"
+        tools:layout="@layout/fragment_select_location" >
+        <action
+            android:id="@+id/action_selectLocationFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/bloodPostingDetailsFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.home.bloodpostingdetails.BloodPostingDetailsFragment"
+        android:label="BloodPostingDetailsFragment"
+        tools:layout="@layout/fragment_blood_posting_details">
+        <argument
+            android:name="bloodPosting"
+            app:argType="com.efedaniel.bloodfinder.bloodfinder.models.request.UploadBloodAvailabilityRequest" />
+        <action
+            android:id="@+id/action_bloodPostingDetailsFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/slide_in_from_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@+id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/bloodPostingRequestFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.notifications.bloodPostingRequest.BloodPostingRequestFragment"
+        android:label="BloodPostingRequestFragment"
+        tools:layout="@layout/fragment_blood_posting_request">
+        <argument
+            android:name="bloodPosting"
+            app:argType="com.efedaniel.bloodfinder.bloodfinder.models.request.BloodPostingRequest" />
+    </fragment>
+    <fragment
+        android:id="@+id/bloodPostingResponseFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.notifications.bloodPostingResponse.BloodPostingResponseFragment"
+        android:label="BloodPostingResponseFragment"
+        tools:layout="@layout/fragment_blood_posting_response">
+        <argument
+            android:name="bloodPosting"
+            app:argType="com.efedaniel.bloodfinder.bloodfinder.models.request.BloodPostingRequest" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewProfileFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.home.viewprofile.ViewProfileFragment"
+        android:label="ViewProfileFragment"
+        tools:layout="@layout/fragment_view_profile"/>
+    <fragment
+        android:id="@+id/requestHistoryFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.home.requesthistory.RequestHistoryFragment"
+        android:label="RequestHistoryFragment"
+        tools:layout="@layout/fragment_request_history">
+        <action
+            android:id="@+id/action_requestHistoryFragment_to_bloodPostingResponseFragment"
+            app:destination="@id/bloodPostingResponseFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/donationHistoryFragment"
+        android:name="com.efedaniel.bloodfinder.bloodfinder.home.donationhistory.DonationHistoryFragment"
+        android:label="DonationHistoryFragment"
+        tools:layout="@layout/fragment_donation_history" >
+        <action
+            android:id="@+id/action_donationHistoryFragment_to_bloodPostingRequestFragment"
+            app:destination="@id/bloodPostingRequestFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/slide_out_to_left"
+            app:popEnterAnim="@anim/slide_in_from_left"
+            app:popExitAnim="@anim/slide_out_to_right" />
+    </fragment>
+</navigation>

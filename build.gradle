@@ -1,0 +1,33 @@
+apply from: './dependencies.gradle'
+
+buildscript {
+    apply from: './dependencies.gradle'
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:' + versions.gradlePlugin
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1")
+        classpath "com.diffplug.spotless:spotless-plugin-gradle:" + versions.spotlessPlugin
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:' + versions.kotlin
+        classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:' + versions.navigation
+        classpath 'com.google.gms:google-services:' + versions.googleServices
+        classpath 'io.fabric.tools:gradle:' + versions.fabric
+        classpath 'com.android.tools.build:gradle:4.0.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1506816230",
+    "firebase_url": "https://final-project-donorconnect-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "final-project-donorconnect",
+    "storage_bucket": "final-project-donorconnect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1506816230:android:efec09a21361948ba68b27",
+        "android_client_info": {
+          "package_name": "com.efedaniel.bloodfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1506816230-beg2gcidp5makuq02qadhsvi4q5j3i2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArhSwYDrqIxR5vuh2raLe91MC79zmyn0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1506816230-4dg67ostgsu5euv98pbvmidvvro5iihg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

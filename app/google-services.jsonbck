@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1068576890050",
+    "firebase_url": "https://blooddonorbankfinder-h4373.firebaseio.com",
+    "project_id": "blooddonorbankfinder-h4373",
+    "storage_bucket": "blooddonorbankfinder-h4373.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068576890050:android:ee0ef04ed33ac19cceaf5b",
+        "android_client_info": {
+          "package_name": "com.efedaniel.bloodfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068576890050-bhhgolkc84v51aau16j0mfdkkr0l8nqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.efedaniel.bloodfinder",
+            "certificate_hash": "1bb41a1345ccd93dd7b29f3d4de978bdf1c14f7f"
+          }
+        },
+        {
+          "client_id": "1068576890050-urarr424mg1tmur08caqol40jisb3dg2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.efedaniel.bloodfinder",
+            "certificate_hash": "9289c7dced6bdc835949e29dab42bd0f04fdf3ed"
+          }
+        },
+        {
+          "client_id": "1068576890050-3hfrtq7t9uh0tsrlk09bcfoodmi9tt11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIDzNq6ZY651EN0hMF5UDY6h8_s4n6Of4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068576890050-3hfrtq7t9uh0tsrlk09bcfoodmi9tt11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
